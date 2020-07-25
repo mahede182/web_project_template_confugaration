@@ -10,12 +10,12 @@ gulp.task('sass', function(){
     .pipe(browserSync.stream());
 });
 
-// // Move JS Files to SRC
-// gulp.task('js', function(){
-//   return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/popper.min.js', 'node_modules/fixed-nav/navbar-fixed.js'])
-//     .pipe(gulp.dest("src/js"))
-//     .pipe(browserSync.stream());
-// });
+// Move JS Files to SRC
+gulp.task('js', function(){
+  return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/popper.min.js', 'node_modules/fixed-nav/navbar-fixed.js'])
+    .pipe(gulp.dest("src/js"))
+    .pipe(browserSync.stream());
+});
 
 // // Watch SASS & Serve
 // gulp.task('serve', ['sass'], function(){
