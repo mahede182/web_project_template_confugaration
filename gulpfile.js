@@ -17,15 +17,15 @@ gulp.task('js', function(){
     .pipe(browserSync.stream());
 });
 
-// // Watch SASS & Serve
-// gulp.task('serve', ['sass'], function(){
-//   browserSync.init({
-//     server: "./src"
-//   });
+// Watch SASS & Serve
+gulp.task('serve', ['sass'], function(){
+  browserSync.init({
+    server: "./src"
+  });
 
-//   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
-//   gulp.watch("src/*.html").on('change', browserSync.reload);
-// });
+  gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
+  gulp.watch("src/*.html").on('change', browserSync.reload);
+});
 
 // // Move Font Awesome Fonts folder to src
 // gulp.task('fonts', function(){
