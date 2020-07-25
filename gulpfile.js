@@ -27,11 +27,11 @@ gulp.task('serve', ['sass'], function(){
   gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
-// // Move Font Awesome Fonts folder to src
-// gulp.task('fonts', function(){
-//   return gulp.src('node_modules/font-awesome/fonts/*')
-//     .pipe(gulp.dest("src/fonts"));
-// });
+// Move Font Awesome Fonts folder to src
+gulp.task('fonts', function(){
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest("src/fonts"));
+});
 
 // // Move font awesome css file
 // gulp.task('fa', function(){
