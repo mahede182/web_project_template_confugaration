@@ -1,0 +1,11 @@
+## My web template confugaration
+-gulpfile.js
+-package.json
+
+## gulpfile.js
+-working with sass
+-working with scss
+-adding fontawesome
+
+##package.json
+-working with dependency
